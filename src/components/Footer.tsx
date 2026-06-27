@@ -107,8 +107,7 @@ export default function Footer() {
           {[
             { label: "LinkedIn", href: "https://www.linkedin.com/in/shaik-ibtihaj-7127b8381/" },
             { label: "GitHub", href: "https://github.com/shaik-ibtihaj" },
-            { label: "Twitter", href: "https://twitter.com" },
-            { label: "Dribbble", href: "https://dribbble.com" }
+            
           ].map((social) => (
             <a
               key={social.label}
