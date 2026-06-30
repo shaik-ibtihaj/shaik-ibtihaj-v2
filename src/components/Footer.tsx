@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Hls from "hls.js";
 import gsap from "gsap";
+
 
 export default function Footer() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -76,17 +78,18 @@ export default function Footer() {
         </h2>
         
         {/* Email CTA with gradient hover border ring */}
-        <a
-          href="mailto:shaikibtihaj07@gmail.com"
+        <Link
+          to="/contact"
           className="relative inline-flex items-center justify-center rounded-full text-xs sm:text-sm font-semibold px-8 py-4 bg-surface border border-stroke text-text-primary hover:scale-105 transition-all duration-300 group overflow-hidden shadow-2xl shadow-black/40"
         >
           <span className="absolute inset-[-2px] rounded-full bg-gradient-to-r from-[#89AACC] to-[#4E85BF] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>
           <span className="absolute inset-[1.5px] rounded-full bg-surface opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>
           <span className="relative z-10 flex items-center gap-2">
-            shaikibtihaj07@gmail.com 
+            Send Message 
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
           </span>
-        </a>
+        </Link>
+
       </div>
 
       {/* GSAP Marquee (z-10) */}

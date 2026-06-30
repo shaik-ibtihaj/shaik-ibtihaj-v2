@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -8,6 +9,36 @@ import Certifications from "./components/Certifications";
 import Research from "./components/Research";
 import Stats from "./components/Stats";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+
+function Home({ isLoading }: { isLoading: boolean }) {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!isLoading && location.state && (location.state as any).scrollTo) {
+      const targetId = (location.state as any).scrollTo;
+      const timer = setTimeout(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [location, isLoading]);
+
+  return (
+    <>
+      <Hero startAnimation={!isLoading} />
+      <SelectedWorks />
+      <Resume />
+      <Stats />
+      <Research />
+      <Certifications />
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,16 +55,14 @@ function App() {
 
       {/* Main Sections */}
       <main className={isLoading ? "hidden" : "block"}>
-        <Hero startAnimation={!isLoading} />
-        <SelectedWorks />
-        <Resume />
-        <Stats />
-        <Research />
-        <Certifications />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<Home isLoading={isLoading} />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
     </div>
   );
 }
 
 export default App;
+
