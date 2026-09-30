@@ -76,7 +76,8 @@ export default function Navbar() {
           {[
             { id: "home", label: "Home" },
             { id: "work", label: "Work" },
-            { id: "resume", label: "Resume" }
+            { id: "resume", label: "Experience & Skills" },
+            { id: "research", label: "Research" },
           ].map((link) => {
             const isActive = activeSection === link.id;
             return (

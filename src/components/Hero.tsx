@@ -8,10 +8,10 @@ interface HeroProps {
 }
 
 const ROLES = [
-  "AI & ML Engineer",
-  "Software Developer",
-  "Research Scholar",
-  "Agentic AI Pioneer"
+  "Backend & AI Engineer",
+  "Full-Stack Software Engineer",
+  "LLM & Agentic AI Specialist",
+  "Data & ML Pipeline Developer"
 ];
 
 export default function Hero({ startAnimation }: HeroProps) {
@@ -105,8 +105,8 @@ export default function Hero({ startAnimation }: HeroProps) {
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
         {/* Name */}
-        <h1 className="name-reveal text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-display italic leading-[0.9] tracking-tight text-text-primary mb-6 select-none mt-12">
-          Shaik Ibtihaj
+        <h1 className="name-reveal text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display italic leading-[0.9] tracking-tight text-text-primary mb-6 select-none mt-12">
+          Shaik Ibtihajulla Sha
         </h1>
 
         {/* Role line */}
@@ -118,12 +118,12 @@ export default function Hero({ startAnimation }: HeroProps) {
           >
             {ROLES[roleIndex]}
           </span>{" "}
-          lives in Sweden.
+          based in Linköping, Sweden.
         </p>
 
         {/* Description */}
         <p className="blur-in text-xs sm:text-sm md:text-base text-muted/80 max-w-2xl mb-10 leading-relaxed font-body font-light">
-          Computer Science graduate with international academic experience in India and Sweden, passionate about Artificial Intelligence, Machine Learning, and Software Development. My academic and research work has focused on predictive modeling, data analytics, and intelligent systems, including my thesis on Human Activity Prediction Using Markov Models. I enjoy solving complex problems through technology and continuously expanding my knowledge in emerging fields such as Agentic AI and autonomous systems. I am eager to contribute to innovative teams and build impactful, data-driven solutions.
+          Software Engineer with 2 years of hands-on experience across backend development, data engineering, and applied AI. Currently building production backend systems at ScandVPN, with prior experience delivering ML-driven analytics at AxioGreen and data pipelines at Datafynder. Specialized in Python, TypeScript, Node.js, REST API design, PostgreSQL, ETL/ELT data pipelines, LLM applications, RAG, and agentic workflows with MCP.
         </p>
 
         {/* CTA Buttons */}
@@ -168,7 +168,8 @@ export default function Hero({ startAnimation }: HeroProps) {
 
           {/* Download Resume */}
           <a
-            href="/resume/shaik-ibtihaj-resume.pdf"
+            href="/resume/Ibtihaj-Resume-3.2.pdf"
+            download="Ibtihaj-Resume-3.2.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download Resume PDF"

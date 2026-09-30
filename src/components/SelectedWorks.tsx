@@ -1,74 +1,74 @@
 import { motion } from "framer-motion";
 import markovImg from "../assets/markov.png";
 import sequentialImg from "../assets/sequential.png";
-import dashboardImg from "../assets/dashboard.png";
 import agenticImg from "../assets/agentic.png";
-import geometricImg from "../assets/geometric.png";
-import neuralImg from "../assets/neural.png";
+import ragImg from "../assets/rag_chatbot.png";
+import campusImg from "../assets/campus_navigation.png";
+import healthImg from "../assets/healthcare_ai.png";
 
 const PROJECTS = [
   {
     id: 1,
-    title: "Human Activity Prediction Using Markov Models",
-    titleItalic: "Markov Activity Predictor",
-    role: "ML Researcher & Developer",
-    desc: "A research-driven machine learning project focused on predicting future human activities by analyzing sequential behavioral patterns. Developed and evaluated first-order and second-order Markov Models, conducted cross-validation experiments, and performed statistical analysis to assess predictive performance.",
-    image: markovImg,
-    colSpan: "md:col-span-7",
-    aspect: "aspect-[16/11]",
-    link: "https://github.com/shaik-ibtihaj"
-  },
-  {
-    id: 2,
-    title: "Churn Prediction System",
-    titleItalic: "Churn Classifier",
-    role: "Machine Learning Developer",
-    desc: "A machine learning solution designed to identify customers who are likely to discontinue a service. The project involved data preprocessing, feature engineering, predictive modeling, and performance evaluation to uncover patterns associated with customer attrition.",
-    image: sequentialImg,
-    colSpan: "md:col-span-5",
-    aspect: "aspect-[4/3] md:aspect-auto md:h-full",
-    link: "https://github.com/shaik-ibtihaj"
-  },
-  {
-    id: 3,
-    title: "Health Plus",
-    titleItalic: "Healthcare Portal",
-    role: "Software Engineer",
-    desc: "A healthcare management platform developed to simplify access to healthcare-related information and services. The system was designed to improve user experience through efficient management of health records, appointments, and essential healthcare resources.",
-    image: dashboardImg,
-    colSpan: "md:col-span-5",
-    aspect: "aspect-[4/3] md:aspect-auto md:h-full",
-    link: "https://github.com/shaik-ibtihaj"
-  },
-  {
-    id: 4,
-    title: "Campus360",
-    titleItalic: "Campus Management Suite",
-    role: "Full-Stack Developer",
-    desc: "A comprehensive campus management platform created to enhance the student experience by bringing essential campus services into a single digital environment. The application provides easier access to academic information, resources, and communication channels.",
-    image: geometricImg,
-    colSpan: "md:col-span-7",
-    aspect: "aspect-[16/11]",
-    link: "https://github.com/shaik-ibtihaj"
-  },
-  {
-    id: 5,
-    title: "Agentic AI Workflow Assistant",
-    titleItalic: "Autonomous Agent Flow",
+    title: "AI Workflow Automation Platform",
+    titleItalic: "Workflow Automation Engine",
     role: "AI Systems Engineer",
-    desc: "An ongoing project exploring autonomous AI systems capable of reasoning, planning, and executing multi-step tasks. The project focuses on integrating Large Language Models, prompt engineering, workflow automation, and intelligent decision-making processes.",
+    desc: "Architected a workflow automation engine using LLM orchestration and tool/function calling to execute multi-step business workflows end-to-end. Integrated external REST APIs for real-time data retrieval and designed a modular architecture with separate planning, execution, and validation stages with reliability guardrails.",
     image: agenticImg,
     colSpan: "md:col-span-7",
     aspect: "aspect-[16/11]",
     link: "https://github.com/shaik-ibtihaj"
   },
   {
+    id: 2,
+    title: "Production Enterprise AI Knowledge Platform (RAG)",
+    titleItalic: "Enterprise RAG Architecture",
+    role: "AI & Backend Engineer",
+    desc: "Built a Retrieval-Augmented Generation system indexing enterprise documents into vector stores for precise, low-hallucination retrieval. Implemented embedding-based semantic search, chunking pipeline with metadata filtering, evaluation layer, and containerized Docker REST API.",
+    image: ragImg,
+    colSpan: "md:col-span-5",
+    aspect: "aspect-[4/3] md:aspect-auto md:h-full",
+    link: "https://github.com/shaik-ibtihaj"
+  },
+  {
+    id: 3,
+    title: "Probabilistic User Behavior Modeling (Bachelor's Thesis)",
+    titleItalic: "Markov Behavior Predictor",
+    role: "ML Researcher & Developer",
+    desc: "Designed first- and second-order Markov chain models to represent sequential user interaction patterns. Generated synthetic behavioral data to test models and uncover latent structure relevant to product analytics and personalization. Documented in full academic thesis.",
+    image: markovImg,
+    colSpan: "md:col-span-5",
+    aspect: "aspect-[4/3] md:aspect-auto md:h-full",
+    link: "https://github.com/shaik-ibtihaj"
+  },
+  {
+    id: 4,
+    title: "Customer Churn Prediction System",
+    titleItalic: "Churn Classifier",
+    role: "Machine Learning Developer",
+    desc: "Built an end-to-end ML pipeline covering data cleaning, feature engineering, model training, and evaluation on PostgreSQL-backed data. Improved AUC-ROC over the baseline model and presented results in stakeholder-facing dashboards tied to customer retention.",
+    image: sequentialImg,
+    colSpan: "md:col-span-7",
+    aspect: "aspect-[16/11]",
+    link: "https://github.com/shaik-ibtihaj"
+  },
+  {
+    id: 5,
+    title: "Campus360: Campus Management Suite",
+    titleItalic: "Campus Platform",
+    role: "Full-Stack Developer",
+    desc: "A comprehensive campus management platform created to enhance student experience by bringing essential campus services into a single digital environment, featuring mobile navigation and OWASP security auditing.",
+    image: campusImg,
+    colSpan: "md:col-span-7",
+    aspect: "aspect-[16/11]",
+    link: "https://github.com/shaik-ibtihaj"
+  },
+  {
     id: 6,
-    title: "Full-Stack Web Application",
-    titleItalic: "Modular Web Architecture",
-    role: "Full-Stack Engineer",
-    desc: "A complete web-based solution developed using modern frontend and backend technologies. The project involved designing user interfaces, implementing business logic, integrating databases, and creating responsive user experiences.",
-    image: neuralImg,
+    title: "Health Plus Healthcare Portal",
+    titleItalic: "Healthcare Portal",
+    role: "Software Engineer",
+    desc: "A healthcare management platform designed to simplify access to healthcare services, featuring predictive analytics, health record management, and decision support.",
+    image: healthImg,
     colSpan: "md:col-span-5",
     aspect: "aspect-[4/3] md:aspect-auto md:h-full",
     link: "https://github.com/shaik-ibtihaj"

@@ -49,7 +49,7 @@ export default function Footer() {
     );
   }, []);
 
-  const marqueeText = "SHAIK IBTIHAJ • ".repeat(16);
+  const marqueeText = "SHAIK IBTIHAJULLA SHA • ".repeat(16);
 
   return (
     <footer
@@ -137,7 +137,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-[10px] sm:text-xs text-muted font-body font-light">
-          © {new Date().getFullYear()} Shaik Ibtihaj. All rights reserved.
+          © {new Date().getFullYear()} Shaik Ibtihajulla Sha. All rights reserved.
         </div>
       </div>
     </footer>

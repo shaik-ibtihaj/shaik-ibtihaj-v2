@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 const STATS = [
   {
     id: 1,
-    number: "3+",
-    label: "Years R&D Experience",
-    desc: "Specializing in artificial intelligence, sequential prediction models, and modular software architectures.",
+    number: "2+",
+    label: "Years Experience",
+    desc: "Hands-on engineering across backend API development, ETL/ELT data pipelines, and applied AI & LLM agents.",
   },
   {
     id: 2,
-    number: "25+",
-    label: "Projects Completed",
-    desc: "From machine learning forecasting algorithms to interactive analytical dashboards and agentic tools.",
+    number: "3",
+    label: "Engineering Roles",
+    desc: "Backend Software Engineer at ScandVPN, AI Engineer Intern at AxioGreen, and Data Engineer at Datafynder.",
   },
   {
     id: 3,
-    number: "2",
-    label: "International Academic Eras",
-    desc: "Academic foundations from JNTUA India combined with advanced machine learning studies at BTH Sweden.",
+    number: "100%",
+    label: "End-to-End Ownership",
+    desc: "From initial design and SQL schema optimization to production deployment, data validation, and CI/CD.",
   },
 ];
 
